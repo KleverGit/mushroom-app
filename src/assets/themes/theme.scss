@@ -1,0 +1,97 @@
+/*COLORS*/
+:root {
+	--primary: #E74C3C;
+	--primary-border: #E74C3C;
+	--primary-hover: #f43434;
+	--hide-if-provider: initial;
+	--hide-if-provider-block: block;
+	--only-if-provider: none;
+}
+
+// RED
+$red-dark-light: #ff7575 !default;
+$red-light: #f78d8d !default;
+
+// BLUE
+$blue: #007ad9;
+$blue-100:#9fbfdf;
+$blue-200:#8cb3d9;
+$blue-300:#79a6d2;
+$blue-400:#6699cc;
+$blue-500:#538cc6;
+$blue-600:#4080bf;
+$blue-700:#3973ac;
+$blue-800:#336699;
+$blue-900:#2d5986;
+
+$green: #107D11;
+$green-100: #8cd98c;
+$green-200: #79d279;
+$green-300: #66cc66;
+$green-400: #53c653;
+$green-500: #40bf40;
+$green-600: #39ac39;
+$green-700: #339933;
+$green-800: #2d862d;
+$green-900: #267326;
+
+$yellow: #ffc107;
+$yellow-100: #f7ee6e;
+$yellow-200: #f6eb55;
+$yellow-300: #f5e93d;
+$yellow-400: #f4e625;
+$yellow-500: #f2e10d;
+$yellow-600: #dacc0b;
+$yellow-700: #c2b60a;
+$yellow-800: #aa9f09;
+
+$orange : #ff9966;
+$orange-100 : #ff884d;
+$orange-200 : #ff8040;
+$orange-300 : #ff7733;
+$orange-400 : #ff661a;
+$orange-500 : #ff5500;
+$orange-600 : #e64d00;
+$orange-700 : #cc4400;
+$orange-800 : #b33c00;
+$orange-900 : #993300;
+
+$cyan-100: #a7bed6;
+
+$white: #fff !default;
+$black: #000 !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #f4f4f4 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #839496 !default;
+$gray-700: #495057 !default;
+$gray-800: #073642 !default;
+$gray-900: #002B36 !default;
+
+
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #E74C3C;
+$orange: #fd7e14;
+
+$red-dark: darkred;
+$green-light: #54b46a;
+$primary: $red;
+$secondary: $gray-500 !default;
+$success: $green !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-300 !default;
+$dark: $gray-700 !default;
+$link-color: $red-light !default;
+
+$font-family-sans-serif: OpenSans,
+sans-serif;
+$font-weight-base: 500 !default;
+$font-size-base: 0.75rem !default;
+$line-height-base: 1.23;
+$body-color: #55595c !default;

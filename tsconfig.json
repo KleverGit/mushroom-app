@@ -2,6 +2,17 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "_commons/*": [
+        "app/commons/*"
+      ],
+      "_core/*": [
+        "app/core/*"
+      ],
+      "_modules/*": [
+        "app/modules/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
