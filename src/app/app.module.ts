@@ -9,6 +9,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
 import { HttpErrorInterceptor } from './commons/interceptor/http-error.interceptor';
+import { UserModule } from './modules/user/user-admin.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HttpErrorInterceptor } from './commons/interceptor/http-error.intercept
   ],
   imports: [
     CommonModule,
+    UserModule,
     BrowserModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
