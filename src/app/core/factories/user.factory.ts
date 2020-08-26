@@ -10,11 +10,19 @@ export class UserFactory {
     }
 
     /**
-     * Get all usera
+     * Get all users
      */
     getAllUsers(): Observable<UserModel[]> {
         return this.userService.getAllUsers();
     }
 
+
+    /**
+    * Save new user
+    * @param user body request
+    */
+    saveUser(user: UserModel): Observable<any> {
+        return this.userService.saveUser(user);
+    }
 
 }

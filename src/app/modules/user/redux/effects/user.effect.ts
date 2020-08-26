@@ -20,7 +20,7 @@ export class UserEffects {
     /**
      * Effecto qupe consulta al servicio web la lista de Useres mediante los filtros ingresados
      */
-    @Effect({ dispatch: true })
+    /*@Effect({ dispatch: true })
     getUserList$: Observable<Action> = this.actions$.pipe(
         ofType<fromUserAction.SetUserListAction>(fromUserAction.SET_USER_LIST),
         withLatestFrom(this.store),
@@ -38,8 +38,6 @@ export class UserEffects {
         catchError(error => {
             return of(error);
         })
-    );
-
-
+    );*/
 
 }

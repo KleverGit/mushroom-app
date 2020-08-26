@@ -15,12 +15,14 @@ import { UserListComponent } from './user-list/user-list.component';
 import { userReducers, UserState } from './redux/states/user.state.root';
 import { environment } from 'src/environments/environment';
 import { AppCommonModule } from 'src/app/commons/app.common.module';
+import { UserModalComponent } from './user-modal/user.modal.component';
 
 export const metaReducers: MetaReducer<UserState>[] = !environment.production ? [storeFreeze] : [];
 @NgModule({
     declarations: [
         UserAdminComponent,
         UserListComponent,
+        UserModalComponent
     ],
     imports: [
         CommonModule,
@@ -38,7 +40,7 @@ export const metaReducers: MetaReducer<UserState>[] = !environment.production ? 
     exports: [
     ],
     entryComponents: [
-        // UserCreateModalComponent
+        UserModalComponent
     ]
 })
 export class UserModule {

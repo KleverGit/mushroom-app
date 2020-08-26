@@ -18,10 +18,9 @@ export class HttpErrorInterceptor implements HttpInterceptor {
     return next.handle(req).pipe(
       tap(evt => {
         if (evt instanceof HttpResponse) {
-          if (evt.status === 200 && evt.body) {
+          /* if (evt.status === 200 && evt.body) {
             console.log('API endpoint error');
-            ;
-          }
+          }*/
         }
       }),
       catchError(error => {

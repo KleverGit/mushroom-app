@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  USER_SERVER : 'https://gorest.co.in'
+  USER_SERVER : 'https://gorest.co.in/',
+  LOCAL_SERVER : '/mushroom/'
 };
 
 /*

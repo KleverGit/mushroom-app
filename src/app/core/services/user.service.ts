@@ -13,7 +13,7 @@ export class UserService extends BaseService {
 
     constructor(protected http: HttpClient) {
         super(http);
-        this.baseUrl = environment.USER_SERVER;
+        this.baseUrl = environment.LOCAL_SERVER;
         this.proxiService = HTTP_SERVICES;
     }
 
@@ -21,7 +21,15 @@ export class UserService extends BaseService {
      * Get all usera
      */
     getAllUsers(): Observable<UserModel[]> {
-        return this.get(`${this.proxiService.GET_ALL_USERS}`);
+        return this.getWithoutBaseUrl(`${environment.USER_SERVER}${this.proxiService.GET_ALL_USERS}`);
+    }
+
+    /**
+     * Save new user
+     * @param user body request
+     */
+    saveUser(user: UserModel): Observable<any> {
+        return this.post(`${this.proxiService.SAVE_USER}`, user);
     }
 
 }
