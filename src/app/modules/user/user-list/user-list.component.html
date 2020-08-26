@@ -4,11 +4,20 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#">Public endpoint user list</a>
-			<div class="d-flex justify-content-end">
+
+			<div class="d-flex flex-row justify-content-end">
+				<div class="input-group">
+					<input type="text" class="form-control text-uppercase" placeholder="Search" [(ngModel)]="searchText"
+						(ngModelChange)="filterList()">
+					<div class="input-group-append">
+
+					</div>
+				</div>
 				<button type="button" class="btn btn-primary" (click)="openModalUser()">
-					<span>Create local user</span>
+					<span>Create</span>
 				</button>
 			</div>
+
 		</nav>
 	</div>
 
@@ -23,7 +32,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr *ngFor="let user of users; let i = index" class="pointer">
+				<tr *ngFor="let user of usersFiltered; let i = index" class="pointer">
 					<td>
 						<span>{{user.name}}</span>
 					</td>
